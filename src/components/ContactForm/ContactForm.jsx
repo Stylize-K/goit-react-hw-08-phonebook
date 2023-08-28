@@ -46,7 +46,7 @@ export const ContactForm = () => {
       return;
     }
     dispatch(
-      addContact({ name: data.name, phone: data.number }) //Відправляємо action addContact в redux store
+      addContact({ name: data.name, number: data.number }) //Відправляємо action addContact в redux store
     );
   };
 

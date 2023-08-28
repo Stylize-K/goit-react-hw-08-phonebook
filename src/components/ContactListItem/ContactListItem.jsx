@@ -12,7 +12,7 @@ export const ContactListItem = ({ contact }) => {
     <li className={css.list_item} key={contact.id}>
       <div className={css.contact_wrp}>
         <FcPhone size={'1.5em'} />
-        {contact.name}: {contact.phone}
+        {contact.name}: {contact.number}
       </div>
       <button
         className={css.button_delete}
@@ -29,6 +29,6 @@ ContactListItem.propTypes = {
   contact: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    phone: PropTypes.string.isRequired,
+    number: PropTypes.string.isRequired,
   }).isRequired,
 };

@@ -2,8 +2,8 @@ import { FcAddDatabase } from 'react-icons/fc';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { object, string } from 'yup';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 import toast from 'react-hot-toast';
 import css from './ContactForm.module.css';
 
